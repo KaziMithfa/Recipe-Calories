@@ -48,7 +48,7 @@ function App() {
             Receipe Calorie
           </h1>
 
-          <div className="flex  text-center gap-x-1 lg:gap-x-6 ml-1 lg:ml-6">
+          <div className="flex  text-center gap-x-[2px] lg:gap-x-6 ml-1 lg:ml-6">
             <a href="" className="text-xs lg:text-xl">
               Home
             </a>
@@ -71,13 +71,13 @@ function App() {
                 alt=""
               />
               <input
-                className="lg:text-xl text-xs w-full lg:ml-1"
+                className="lg:text-xl text-xs w-1/2 lg:w-full lg:ml-1"
                 type="text"
                 placeholder="Search"
               />
             </div>
 
-            <div className="lg:w-[48px] lg:h-[48px] w-[32px] h-[32px] bg-green-700 p-[2px] flex justify-center items-center    rounded-full">
+            <div className="lg:w-[48px] lg:h-[48px] w-[32px] h-[32px] mr-2 bg-green-700 p-[2px] flex justify-center items-center    rounded-full">
               <img
                 className="lg:w-[32px] lg:h-[32px] w-[20px] h-[20px] object-cover rounded-full"
                 src="../images/profile.jpg"
@@ -88,17 +88,17 @@ function App() {
         </nav>
 
         <div className="mt-3 bg-[url('../images/background.jpg')] bg-cover bg-center  h-[400px] sm:h-[600px] md:h-[800px] lg:h-[700px] pt-[160px] lg:pt-[260px]   ">
-          <h1 className="h-[100px] lg:w-[700px] h-full text-[#FFF] text-center text-3xl lg:text-5xl  mx-auto">
+          <h1 className="h-[100px] lg:w-[700px]  text-[#FFF] text-center text-xl lg:text-5xl  mx-auto">
             Discover an amazing class for you , which will be great!
           </h1>
 
-          <p className="mt-4 text-center mx-auto  text-[#FFF] text-xs lg:text-xl  lg:w-[700px]">
+          <p className=" mt-0 sm:mb-2 lg:mt-4 text-center mx-auto  text-[#FFF] text-xs lg:text-xl w-full  lg:w-[700px]">
             Cooking is the art of preparing food by combining ingredients with
             care and technique, creating nourishing, flavorful, and often
             comforting dishes.
           </p>
 
-          <div className="flex mt-10 ml-10  lg:ml-32 items-center justify-center lg:mr-10">
+          <div className="flex mt-5  ml-10  lg:ml-32 items-center justify-center lg:mr-10">
             <button className="bg-[#0BE58A] text-[#150B2B] text-center rounded-[50px] lg:px-6 px-3">
               Explore Now
             </button>
@@ -125,7 +125,6 @@ function App() {
 
         <div className="flex gap-x-1 mt-3 lg:mt-5 ">
           <div className=" w-[48%]">
-            <p>1st div</p>
             <Recipies handleWantToCook={handleWantToCook}></Recipies>
           </div>
 
